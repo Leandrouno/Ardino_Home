@@ -28,7 +28,7 @@ __asm volatile ("nop");
 
 /***************************SETTING EXTERNAL CONECTION**************************************/
 //#define ExControlMail "example@use.com"
-#define ExControlPass "VaLe1157"
+#define ExControlPass "********"
 
 //****************************************************
 //CONFIGURACION EQUIPOS INTALADOS, TERMOSTATOS, ENCHUFES RADIOFRECUENCIA 433MHZ, INFARROJOS.

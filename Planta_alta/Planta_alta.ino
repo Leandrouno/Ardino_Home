@@ -1,3 +1,23 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@Leandrouno 
+Leandrouno
+/
+Ardino_Home
+1
+00
+ Code Issues 0 Pull requests 0 Actions Projects 0 Wiki Security Insights Settings
+Ardino_Home/Planta_alta/Planta_alta.ino
+@Leandrouno Leandrouno Update Planta_alta.ino
+801658a on 19 Aug 2018
+887 lines (694 sloc)  30.4 KB
+  
 // BOF preprocessor bug prevent - insert me on top of your arduino-code
 // From: http://www.a-control.de/arduino-fehler/?lang=en
 #if 1
@@ -884,4 +904,17 @@ void AutomaticDST(){
 
 /*************************************************************/
 //USER FUNCTIONS
+
+© 2020 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
 

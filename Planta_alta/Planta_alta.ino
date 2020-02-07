@@ -1,23 +1,3 @@
-Skip to content
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@Leandrouno 
-Leandrouno
-/
-Ardino_Home
-1
-00
- Code Issues 0 Pull requests 0 Actions Projects 0 Wiki Security Insights Settings
-Ardino_Home/Planta_alta/Planta_alta.ino
-@Leandrouno Leandrouno Update Planta_alta.ino
-801658a on 19 Aug 2018
-887 lines (694 sloc)  30.4 KB
-  
 // BOF preprocessor bug prevent - insert me on top of your arduino-code
 // From: http://www.a-control.de/arduino-fehler/?lang=en
 #if 1
@@ -48,7 +28,7 @@ __asm volatile ("nop");
 
 /***************************SETTING EXTERNAL CONECTION**************************************/
 //#define ExControlMail "example@use.com"
-#define ExControlPass "********"
+#define ExControlPass "*****"
 
 //****************************************************
 //CONFIGURACION EQUIPOS INTALADOS, TERMOSTATOS, ENCHUFES RADIOFRECUENCIA 433MHZ, INFARROJOS.
@@ -162,7 +142,7 @@ __asm volatile ("nop");
 
   #define TEMPERATURE_PRECISION 9
 #define ONE_WIRE_BUS 16
-  DeviceAddress Ds18B20Addres[THERMOSTAT_DS18B20_NUMBER] ={{0x28,0xFF,0x54,0x9D,0x74,0x04,0x00,0xF4},{0x28,0xFF,0xD9,0x68,0x78,0x04,0x00,0x98},{0x28,0xFF,0xA0,0x9D,0x74,0x04,0x00,0x4D},{0x28,0xFF,0xC8,0x5A,0x77,0x04,0x00,0x39},{0x28,0xA9,0x29,0xD0,0x05,0x00,0x00,0xEB}};
+  DeviceAddress Ds18B20Addres[THERMOSTAT_DS18B20_NUMBER] ={{0x28,0xFF,0x54,0x9D,0x74,0x04,0x00,0xF4},{0x28, 0xFF, 0xD9, 0x68, 0x78, 0x04, 0x00, 0x98},{0x28, 0xFF, 0xA0, 0x9D, 0x74, 0x04, 0x00, 0x4D},{0x28,0xFF,0xC8,0x5A,0x77,0x04,0x00,0x39},{0x28,0xA9,0x29,0xD0,0x05,0x00,0x00,0xEB}};
   OneWire oneWire(ONE_WIRE_BUS);  // Setup a oneWire instance to communicate with any OneWire devices (not just Maxim/Dallas temperature ICs)
   DallasTemperature sensorTemp(&oneWire);// Pass our oneWire reference to Dallas Temperature.   
 
@@ -333,8 +313,8 @@ byte PinOutput[]={22,24,26,28,30,32,34,36,38};
 
 
 byte mac[] = {0x90, 0xA2, 0xDA, 0x0F, 0x26, 0x21};
-IPAddress ip(192,168,1,200);
-unsigned int localPort = 5001;
+IPAddress ip(192,168,1,220);
+unsigned int localPort = 5004;
 
 const boolean SecureConnection=true;
 
@@ -904,17 +884,4 @@ void AutomaticDST(){
 
 /*************************************************************/
 //USER FUNCTIONS
-
-© 2020 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
 
